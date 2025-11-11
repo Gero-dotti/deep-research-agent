@@ -1,16 +1,16 @@
 # Deep Research Agent
 
-Este proyecto implementa un **agente de investigación automática** construido con el **AI SDK de Vercel** y **TypeScript**.  
-El objetivo es automatizar la búsqueda, evaluación y síntesis de información desde la web, generando reportes detallados en formato Markdown.
+This project implements an **automatic research agent** built with the **Vercel AI SDK** and **TypeScript**.  
+Its goal is to automate web search, evaluation, and synthesis of information, producing detailed research reports in Markdown format.
 
-## Contexto
+## Context
 
-El código está basado en la guía oficial de Vercel publicada en 
+The code is based on the official Vercel documentation:  
 [https://aie-feb-25.vercel.app/docs/deep-research](https://aie-feb-25.vercel.app/docs/deep-research)
 
-Seguí la estructura propuesta en esa documentación y realicé **cambios menores** para ajustar el flujo y formato de salida, manteniendo la lógica y arquitectura original.
+I followed the structure and logic from the guide, making **minor adjustments** to adapt the flow and output formatting while preserving the original architecture.
 
-## Tecnologías utilizadas
+## Technologies Used
 
 - **TypeScript**
 - **Node.js**
@@ -21,18 +21,18 @@ Seguí la estructura propuesta en esa documentación y realicé **cambios menore
 - **Dotenv**
 - **fs (File System)**
 
-## Funcionamiento general
+## How It Works
 
-El archivo principal es `src/index.ts`, el cual:
-1. Genera subconsultas de búsqueda relevantes para una pregunta inicial.
-2. Usa la API de Exa para obtener resultados web.
-3. Evalúa la relevancia de cada resultado.
-4. Genera aprendizajes y nuevas preguntas a partir de cada fuente.
-5. Itera recursivamente hasta completar la profundidad definida.
-6. Produce un **informe final (`report.md`)** con los hallazgos organizados.
+The main file is `src/index.ts`, which:
+1. Generates relevant subqueries for an initial research question.  
+2. Uses the Exa API to fetch web results.  
+3. Evaluates the relevance of each result.  
+4. Extracts insights and generates follow-up questions from each source.  
+5. Iterates recursively until the defined research depth is reached.  
+6. Produces a **final report (`report.md`)** summarizing the findings.
 
-## Ejecución
+## Running the Project
 
-1. Instala las dependencias:
+1. Install dependencies:
    ```bash
    npm install
